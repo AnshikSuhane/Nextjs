@@ -95,11 +95,11 @@ export default function ProjectsPage() {
       title: "E-commerce Platform",
       description: "A full-stack e-commerce solution with payment integration and admin dashboard.",
       longDescription:
-        "This comprehensive e-commerce platform features user authentication, product catalog with filtering and search, shopping cart functionality, secure checkout with Stripe integration, order management, and an admin dashboard for inventory control. Built with React, Node.js, Express, and MongoDB.",
+        "This comprehensive e-commerce platform features user authentication, product catalog with filtering and search, shopping cart functionality, secure checkout with Stripe integration, order management, and an admin dashboard for inventory control. Built with React, Supabase.",
       image: ecommerce,
       liveUrl: "https://ecommerce-demo.com",
       code: "https://github.com/AnshikSuhane/FruitStore.git",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      tags: ["React", "Node.js","supabase"],
       category: "frontend",
       delay: 0.1,
     },
