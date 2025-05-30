@@ -58,8 +58,8 @@ export const featuredProjects: Project[] = [
       "A modern portfolio site built with Next.js and Framer Motion animations.",
     longDescription:
       "This portfolio website showcases professional work with smooth animations and transitions. Features include project galleries, skill visualization, contact forms, and responsive design for all devices.",
-    liveUrl: "https://nextjs-u832-q1co547fg-anshiksuhanes-projects.vercel.app/",
-    code: "https://github.com/AnshikSuhane/Nextjs.git",
+    liveUrl: "https://nextjs-td8i.vercel.app/",
+    code: "https://github.com/AnshikSuhane/Nextjs.g",
     image: portfolio,
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
   },
