@@ -46,7 +46,7 @@ export const featuredProjects: Project[] = [
       "A robust e-commerce web application with secure authentication and payment integration.",
     longDescription:
       "ShopHub is a full-featured e-commerce platform that includes user authentication, dynamic product listings with search and filters, a shopping cart with real-time updates, secure checkout with integrated payment gateway, and an admin dashboard for managing inventory, orders, and users.",
-    image: ecommerce  ,
+    image: ecommerce,
     liveUrl: "https://thriving-dodol-5e0eb7.netlify.app/",
     code: "https://github.com/AnshikSuhane/RealEstate.git",
     tags: ["React", "shadcnUi"],

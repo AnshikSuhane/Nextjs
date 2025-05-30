@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { SkillShowcase } from "@/components/skill-showcase"
-import ecommerce from "@/public/ecommerce.png"
+import ecommerce from "@/public/ecommerce.png";
 import realEstate from "@/public/RealEstate.png"
 import portfolio from "@/public/Portfolio.png"
 
