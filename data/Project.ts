@@ -47,8 +47,8 @@ export const featuredProjects: Project[] = [
     longDescription:
       "ShopHub is a full-featured e-commerce platform that includes user authentication, dynamic product listings with search and filters, a shopping cart with real-time updates, secure checkout with integrated payment gateway, and an admin dashboard for managing inventory, orders, and users.",
     image: ecommerce,
-    liveUrl: "https://thriving-dodol-5e0eb7.netlify.app/",
-    code: "https://github.com/AnshikSuhane/RealEstate.git",
+    liveUrl: "https://health-tracker-a187.vercel.app/",
+    code: "https://github.com/AnshikSuhane/ShopHub.git",
     tags: ["React", "shadcnUi"],
   },
 
@@ -58,8 +58,8 @@ export const featuredProjects: Project[] = [
       "A modern portfolio site built with Next.js and Framer Motion animations.",
     longDescription:
       "This portfolio website showcases professional work with smooth animations and transitions. Features include project galleries, skill visualization, contact forms, and responsive design for all devices.",
-    liveUrl: "https://final-portfolio-anshik.netlify.app",
-    code: "https://github.com/AnshikSuhane/AnshikSuhane.git",
+    liveUrl: "https://nextjs-u832-q1co547fg-anshiksuhanes-projects.vercel.app/",
+    code: "https://github.com/AnshikSuhane/Nextjs.git",
     image: portfolio,
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
   },

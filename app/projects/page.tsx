@@ -92,13 +92,13 @@ export default function ProjectsPage() {
   const projects: Project[] = [
     {
       id: "ecommerce",
-      title: "E-commerce Platform",
+      title: "ShopHub E-commerce Platform",
       description: "A full-stack e-commerce solution with payment integration and admin dashboard.",
       longDescription:
         "This comprehensive e-commerce platform features user authentication, product catalog with filtering and search, shopping cart functionality, secure checkout with Stripe integration, order management, and an admin dashboard for inventory control. Built with React, Supabase.",
       image: ecommerce,
-      liveUrl: "https://ecommerce-demo.com",
-      code: "https://github.com/AnshikSuhane/FruitStore.git",
+      liveUrl: "https://health-tracker-a187.vercel.app/",
+      code: "https://github.com/AnshikSuhane/shopHub.git",
       tags: ["React", "Node.js","supabase"],
       category: "frontend",
       delay: 0.1,
@@ -123,7 +123,7 @@ export default function ProjectsPage() {
       longDescription:
         "This portfolio website showcases professional work with smooth animations and transitions. Features include project galleries, skill visualization, contact forms, and responsive design for all devices. Built with Next.js, Framer Motion, and Tailwind CSS.",
       image: portfolio,
-      liveUrl: "https://final-portfolio-anshik.netlify.app",
+      liveUrl: "https://nextjs-u832-q1co547fg-anshiksuhanes-projects.vercel.app/",
       code: "https://github.com/AnshikSuhane/AnshikSuhane.git",
       tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
       category: "frontend",
