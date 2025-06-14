@@ -74,7 +74,7 @@ export const skillSet: SkillSet[] = [
   },
   {
     name: "CSS",
-    img: "https:87//cdn4.iconfinder.com/data/icons/iconsimple-programming/512/css-512.png",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubsfvX1GCHF8amyfEQxTz7AECFDY-oGMVTg&s",
     borderColor: "rgb(33, 150, 243)",
     delay: 0.15,
   },

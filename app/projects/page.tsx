@@ -227,7 +227,7 @@ export default function ProjectsPage() {
             },
             {
               name: "Tailwind CSS",
-              icon: "https://scontent.fidr4-2.fna.fbcdn.net/v/t39.30808-6/299463877_560030875914611_8025210373789510385_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=RHC7jsxkEmwQ7kNvwF9UpQI&_nc_oc=Adm5HgwlzWQPYdVA1u2CgUxUN90o03aoZHTCpGwyzSTxFCMSixRhXs3U4eGThI0jHjiOMVvYTxM0Lh5IskZJb_px&_nc_zt=23&_nc_ht=scontent.fidr4-2.fna&_nc_gid=4aIV5htoQh9TVEdfxpt_XA&oh=00_AfHDZyoUOk-viKTG5GHoTOCWmS6fxEugQOskTcDgPwZx1w&oe=68101F77",
+              icon:"https://miro.medium.com/v2/resize:fit:1400/1*__f27S-qQF2CAASt5bOwqg.png",
               description: "A utility-first CSS framework for rapidly building custom user interfaces.",
               projects: ["Portfolio Website", "E-commerce Platform","EaseEstate-RealEstate Plattform"],
             },
