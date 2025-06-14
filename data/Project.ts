@@ -98,7 +98,7 @@ export const skillSet: SkillSet[] = [
   },
   {
     name: "Tailwind CSS",
-    img: "https://cdn.iconscout.com/icon/free/png-256/free-tailwindcss-3521829-2945278.png",
+    img: "https://miro.medium.com/v2/resize:fit:1400/1*__f27S-qQF2CAASt5bOwqg.png",
     borderColor: "rgb(56, 189, 248)",
     delay: 0.32,
   },
