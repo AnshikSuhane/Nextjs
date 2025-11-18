@@ -1,4 +1,5 @@
 import type React from "react"
+// @ts-ignore: side-effect import of './globals.css' has no type declarations
 import "./globals.css"
 import { Outfit } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
