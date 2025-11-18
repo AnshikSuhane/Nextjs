@@ -36,7 +36,7 @@ export const featuredProjects: Project[] = [
     longDescription:
       "This comprehensive e-commerce platform features user authentication, product catalog with filtering and search, shopping cart functionality, secure checkout with Stripe integration, order management, and an admin dashboard for inventory control.",
     image: RealState,
-    liveUrl: "https://thriving-dodol-5e0eb7.netlify.app/",
+    liveUrl: "https://easeestate.netlify.app/",
     code: "https://github.com/AnshikSuhane/RealEstate.git",
     tags: ["React", "Clerk"],
   },
@@ -58,8 +58,8 @@ export const featuredProjects: Project[] = [
       "A modern portfolio site built with Next.js and Framer Motion animations.",
     longDescription:
       "This portfolio website showcases professional work with smooth animations and transitions. Features include project galleries, skill visualization, contact forms, and responsive design for all devices.",
-    liveUrl: "https://nextjs-td8i.vercel.app/",
-    code: "https://github.com/AnshikSuhane/Nextjs.g",
+    liveUrl: "https://anshiksuhane.vercel.app/",
+    code: "https://github.com/AnshikSuhane/Nextjs",
     image: portfolio,
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
   },
@@ -132,7 +132,7 @@ export const skillSet: SkillSet[] = [
 export const tools: SkillSet[] = [
   {
     name: "VS Code",
-    img: "https://code.visualstudio.com/assets/images/code-stable.png",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNxhezarmB6pnq4P8iLBiqM4ZHgddrXE3zg&s",
     borderColor: "rgb(63, 81, 181)",
     delay: 0.1,
   },
@@ -180,7 +180,7 @@ export const tools: SkillSet[] = [
   },
   {
     name: "Shadcn UI",
-    img: "https://raw.githubusercontent.com/radix-vue/shadcn-vue/dev/apps/www/src/public/android-chrome-192x192.png",
+    img: "https://blog.openreplay.com/images/developers-switching-shadcn-ui-react/images/hero.png",
     borderColor: "rgb(63, 81, 181)",
     delay: 0.45,
   },

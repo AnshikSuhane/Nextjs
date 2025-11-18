@@ -10,7 +10,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import emailjs from "emailjs-com";
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -29,36 +28,32 @@ export default function ContactPage() {
   const formInView = useInView(formRef, { once: true, amount: 0.2 });
   const infoInView = useInView(infoRef, { once: true, amount: 0.2 });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formState, "YOUR_USER_ID")
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsSubmitted(true);
-          setFormState({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formState),
+    });
 
-          // Reset success message after 5 seconds
-          setTimeout(() => {
-            setIsSubmitted(false);
-          }, 5000);
-        },
-        (error) => {
-          console.log(error.message);
-        }
-      )
-      .finally(() => {
-        setIsSubmitting(false);
-      });
-  };
+    const data = await res.json();
+
+    if (data.success) {
+      setIsSubmitted(true);
+      setFormState({ name: "", email: "", subject: "", message: "" });
+
+      setTimeout(() => setIsSubmitted(false), 5000);
+    }
+  } catch (err) {
+    console.error(err);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
   return (
     <div className="container px-4 py-12 md:px-6 md:py-24 lg:py-32 pt-32">
       <motion.div
@@ -297,7 +292,7 @@ export default function ContactPage() {
                       name="name"
                       placeholder="Your name"
                       value={formState.name}
-                      onChange={handleSubmit}
+                      onChange={(e)=>setFormState({...formState,name:e.target.value})}
                       required
                       className="transition-all focus-visible:ring-primary"
                     />
@@ -312,7 +307,7 @@ export default function ContactPage() {
                       type="email"
                       placeholder="Your email"
                       value={formState.email}
-                      onChange={handleSubmit}
+                      onChange={(e)=>setFormState({...formState,email:e.target.value})}
                       required
                       className="transition-all focus-visible:ring-primary"
                     />
@@ -326,7 +321,7 @@ export default function ContactPage() {
                       name="subject"
                       placeholder="Subject"
                       value={formState.subject}
-                      onChange={handleSubmit}
+                      onChange={(e)=>setFormState({...formState,subject:e.target.value})}
                       required
                       className="transition-all focus-visible:ring-primary"
                     />
@@ -341,7 +336,7 @@ export default function ContactPage() {
                       placeholder="Your message"
                       rows={5}
                       value={formState.message}
-                      onChange={handleSubmit}
+                      onChange={(e)=>setFormState({...formState,message:e.target.value})}
                       required
                       className="transition-all focus-visible:ring-primary"
                     />

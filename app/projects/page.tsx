@@ -110,7 +110,7 @@ export default function ProjectsPage() {
       longDescription: 
         "EaseEstate is a responsive full-stack property finder platform that allows users to search, explore, and book properties in real-time. It features a seamless booking system, property filters, user authentication, and admin management. Built using Next.js, Socket.io for real-time communication, PostgreSQL for data storage, and hosted on AWS for scalability and performance.",
       image: realEstate,
-      liveUrl: "https://thriving-dodol-5e0eb7.netlify.app/",
+      liveUrl: "https://easeestate.netlify.app/",
       code: "https://github.com/AnshikSuhane/RealEstate.git",
       tags: ["React Js", "Clerk", "Tailwind CSS"],
       category: "frontend",
@@ -123,7 +123,7 @@ export default function ProjectsPage() {
       longDescription:
         "This portfolio website showcases professional work with smooth animations and transitions. Features include project galleries, skill visualization, contact forms, and responsive design for all devices. Built with Next.js, Framer Motion, and Tailwind CSS.",
       image: portfolio,
-      liveUrl: "https://nextjs-td8i.vercel.app/",
+      liveUrl: "https://anshiksuhane.vercel.app/",
       code: "https://github.com/AnshikSuhane/Nextjs.git",
       tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
       category: "frontend",

@@ -3,7 +3,14 @@
 import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { ArrowRight, Download, ExternalLink, Github, Star, Mail } from "lucide-react";
+import {
+  ArrowRight,
+  Download,
+  ExternalLink,
+  Github,
+  Star,
+  Mail,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -25,7 +32,10 @@ export default function Home() {
   // Check if elements are in view
   const skillsInView = useInView(skillsRef, { once: true, amount: 0.2 });
   const projectsInView = useInView(projectsRef, { once: true, amount: 0.2 });
-  const testimonialsInView = useInView(testimonialsRef, { once: true, amount: 0.2 });
+  const testimonialsInView = useInView(testimonialsRef, {
+    once: true,
+    amount: 0.2,
+  });
 
   // Parallax scroll effect
   const { scrollYProgress } = useScroll();
@@ -71,8 +81,8 @@ export default function Home() {
                   transition={{ delay: 0.2, duration: 0.5 }}
                 >
                   Hi, I'm{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                    Anshik Suhane
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-400 via-red-400 to-green-400">
+                    {" "}Anshik Suhane
                   </span>
                 </motion.h1>
                 <motion.p
@@ -97,8 +107,15 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
-                <a href={resume} download="AnshikSuhane.pdf" className="w-full sm:w-auto">
-                  <Button variant="outline" className="w-full sm:w-auto flex gap-2">
+                <a
+                  href={resume}
+                  download="AnshikSuhane.pdf"
+                  className="w-full sm:w-auto"
+                >
+                  <Button
+                    variant="outline"
+                    className="w-full sm:w-auto flex gap-2"
+                  >
                     <Download className="h-4 w-4" />
                     Download Resume
                   </Button>
@@ -111,7 +128,7 @@ export default function Home() {
                 transition={{ delay: 0.8, duration: 0.5 }}
               >
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/AnshikSuhane"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -121,7 +138,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/anshik-suhane-003a89316/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -340,7 +357,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={skillsInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="mt-12 text-center"
+            className="mt-20 text-center"
           >
             <h3 className="text-xl font-bold mb-6">Technologies I Work With</h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-3 sm:gap-4 max-w-4xl mx-auto">
@@ -352,7 +369,7 @@ export default function Home() {
                   transition={{ delay: tech.delay, duration: 0.5 }}
                   viewport={{ once: true }}
                   style={{ borderLeft: `6px solid ${tech.borderColor}` }}
-                  className="flex flex-col items-center p-3 rounded-lg bg-card border border-border hover:shadow-md transition-all"
+                  className="flex flex-col items-center p-3 rounded-lg bg-white dark:bg-white dark:text-black border border-gray-200 hover:shadow-md transition-all"
                 >
                   <div className="relative h-8 w-8 sm:h-10 sm:w-10 mb-2">
                     <Image
@@ -372,7 +389,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={skillsInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="mt-12 text-center"
+            className="mt-16 text-center"
           >
             <h3 className="text-xl font-bold mb-6">Tools I Work With</h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-3 sm:gap-4 max-w-4xl mx-auto">
@@ -384,7 +401,7 @@ export default function Home() {
                   transition={{ delay: tech.delay, duration: 0.5 }}
                   viewport={{ once: true }}
                   style={{ borderLeft: `6px solid ${tech.borderColor}` }}
-                  className="flex flex-col items-center p-3 rounded-lg bg-card border border-border hover:shadow-md transition-all"
+                  className="flex flex-col items-center p-3 rounded-lg bg-white dark:bg-white dark:text-black border border-gray-200 hover:shadow-md transition-all"
                 >
                   <div className="relative h-8 w-8 sm:h-10 sm:w-10 mb-2">
                     <Image
@@ -442,7 +459,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    
+
       {/* CTA Section */}
       <section className="py-16 md:py-24 lg:py-32 relative overflow-hidden">
         <div className="container px-4 md:px-6">

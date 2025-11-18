@@ -1,5 +1,5 @@
 import type React from "react"
-import "@/app/globals.css"
+import "./globals.css"
 import { Outfit } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
@@ -35,4 +35,3 @@ export default function RootLayout({
 }
 
 
-import './globals.css'
