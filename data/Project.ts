@@ -63,6 +63,19 @@ export const featuredProjects: Project[] = [
     image: portfolio,
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
   },
+  {
+  id: "prepgenius",
+  title: "PrepGenius AI",
+  description: "An AI-powered platform to generate exam-focused notes, diagrams, and downloadable PDFs instantly.",
+  longDescription:
+    "PrepGenius AI is a smart study assistant that generates structured exam notes, project documentation, diagrams, and revision-ready content using AI. It includes features like AI note generation, credit-based usage system, Stripe payments for purchasing credits, downloadable PDFs, and a clean responsive dashboard. Built using the MERN stack with modern UI animations.",
+  image: prepgenius,
+  liveUrl: "https://your-prepgenius-live-link.com",
+  code: "https://github.com/yourgithub/prepgenius",
+  tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Tailwind CSS"],
+  category: "fullstack",
+  delay: 0.4,
+}
 ];
 
 export const skillSet: SkillSet[] = [
@@ -127,6 +140,7 @@ export const skillSet: SkillSet[] = [
     borderColor: "rgb(75, 192, 192)",
     delay: 0.55,
   },
+  
 ];
 
 export const tools: SkillSet[] = [
@@ -182,6 +196,12 @@ export const tools: SkillSet[] = [
     name: "Shadcn UI",
     img: "https://blog.openreplay.com/images/developers-switching-shadcn-ui-react/images/hero.png",
     borderColor: "rgb(63, 81, 181)",
+    delay: 0.45,
+  },
+  {
+    name: "Stripe",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGluJhW7I1NYU7jF77E-9K9I46_ib_DUNHw&s",
+   borderColor: "rgb(63, 81, 181)",
     delay: 0.45,
   },
 ];
