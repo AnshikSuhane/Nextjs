@@ -64,7 +64,6 @@ export const featuredProjects: Project[] = [
     tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
   },
   {
-  id: "prepgenius",
   title: "PrepGenius AI",
   description: "An AI-powered platform to generate exam-focused notes, diagrams, and downloadable PDFs instantly.",
   longDescription:
