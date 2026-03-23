@@ -72,7 +72,6 @@ export const featuredProjects: Project[] = [
   liveUrl: "https://prepgenius-ai-client.onrender.com",
   code: "https://github.com/AnshikSuhane/PrepGenius_AI",
   tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Tailwind CSS"],
-  category: "fullstack",
   delay: 0.4,
 }
 ];
