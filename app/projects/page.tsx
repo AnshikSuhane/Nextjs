@@ -11,7 +11,7 @@ import { SkillShowcase } from "@/components/skill-showcase"
 import ecommerce from "@/public/ecommerce.png";
 import realEstate from "@/public/RealEstate.png"
 import portfolio from "@/public/Portfolio.png"
-
+import prepgenius from "@/public/PrepGenius.png"
 interface Project {
   id: string
   title: string
@@ -21,7 +21,7 @@ interface Project {
   liveUrl?: string
   code: string
   tags: string[]
-  category: "all" | "frontend"
+  category: "all" | "frontend" | "fullstack"
   delay: number
 }
 
@@ -136,8 +136,8 @@ export default function ProjectsPage() {
   longDescription:
     "PrepGenius AI is a smart study assistant that generates structured exam notes, project documentation, diagrams, and revision-ready content using AI. It includes features like AI note generation, credit-based usage system, Stripe payments for purchasing credits, downloadable PDFs, and a clean responsive dashboard. Built using the MERN stack with modern UI animations.",
   image: prepgenius,
-  liveUrl: "https://your-prepgenius-live-link.com",
-  code: "https://github.com/yourgithub/prepgenius",
+  liveUrl: "https://prepgenius-ai-client.onrender.com/",
+  code: "https://github.com/AnshikSuhane/prepgenius",
   tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Tailwind CSS"],
   category: "fullstack",
   delay: 0.4,
@@ -179,9 +179,10 @@ export default function ProjectsPage() {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="flex justify-center mb-12"
         >
-          <TabsList className="grid grid-cols-2 w-full max-w-xl">
+          <TabsList className="grid grid-cols-3 w-full max-w-xl">
             <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="frontend">Frontend</TabsTrigger>
+            <TabsTrigger value="fullstack">Full Stack </TabsTrigger>
           </TabsList>
         </motion.div>
 
@@ -192,11 +193,19 @@ export default function ProjectsPage() {
             ))}
           </div>
         </TabsContent>
-
-        <TabsContent value="frontend" className="space-y-8">
+<TabsContent value="frontend" className="space-y-8">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects
               .filter((project) => project.category === "frontend")
+              .map((project, index) => (
+                <ProjectCard key={project.id} project={project} index={index} />
+              ))}
+          </div>
+        </TabsContent>
+        <TabsContent value="fullstack" className="space-y-8">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {projects
+              .filter((project) => project.category === "fullstack")
               .map((project, index) => (
                 <ProjectCard key={project.id} project={project} index={index} />
               ))}

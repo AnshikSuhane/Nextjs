@@ -69,8 +69,8 @@ export const featuredProjects: Project[] = [
   longDescription:
     "PrepGenius AI is a smart study assistant that generates structured exam notes, project documentation, diagrams, and revision-ready content using AI. It includes features like AI note generation, credit-based usage system, Stripe payments for purchasing credits, downloadable PDFs, and a clean responsive dashboard. Built using the MERN stack with modern UI animations.",
   image: PrepGenius,
-  liveUrl: "https://your-prepgenius-live-link.com",
-  code: "https://github.com/yourgithub/prepgenius",
+  liveUrl: "https://prepgenius-ai-client.onrender.com",
+  code: "https://github.com/AnshikSuhane/PrepGenius_AI",
   tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Tailwind CSS"],
   category: "fullstack",
   delay: 0.4,
