@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import RealState from "@/public/RealEstate.png";
 import ecommerce from "@/public/ecommerce.png";
 import portfolio from "@/public/Portfolio.png";
-
+import PrepGenius from "@/public/PrepGenius.png";
 interface Project {
   title: string;
   description: string;
@@ -68,7 +68,7 @@ export const featuredProjects: Project[] = [
   description: "An AI-powered platform to generate exam-focused notes, diagrams, and downloadable PDFs instantly.",
   longDescription:
     "PrepGenius AI is a smart study assistant that generates structured exam notes, project documentation, diagrams, and revision-ready content using AI. It includes features like AI note generation, credit-based usage system, Stripe payments for purchasing credits, downloadable PDFs, and a clean responsive dashboard. Built using the MERN stack with modern UI animations.",
-  image: prepgenius,
+  image: PrepGenius,
   liveUrl: "https://your-prepgenius-live-link.com",
   code: "https://github.com/yourgithub/prepgenius",
   tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "Tailwind CSS"],
